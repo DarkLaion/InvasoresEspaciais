@@ -14,6 +14,7 @@ public class Jogador extends Personagem {
     protected static final int PLAYER_SPEED = 4;
     private boolean esquerda, direita;
     private int pontuacao = 0;
+    private Jogo jogoAtual = Jogo.getJogoAtual();
 
     //getters
     public int getVx() {
@@ -85,7 +86,13 @@ public class Jogador extends Personagem {
                 break;
             case KeyEvent.VK_SPACE: 
                 atirar();
-                break; 
+                break;
+            case KeyEvent.VK_N:
+                jogoAtual.jogo();
+                break;
+            case KeyEvent.VK_S:
+                
+                break;
         }
         atualizarVelocidade();
     }

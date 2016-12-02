@@ -13,6 +13,7 @@ import java.awt.image.BufferStrategy;
 import java.util.ArrayList;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import javax.swing.border.*;
 
 
 /**
@@ -31,6 +32,8 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
     @SuppressWarnings("unused")
     private long tempo;
     private boolean fimJogo = false;
+    private static Jogo jogoAtual;
+    private static JFrame janelaAtual;
     
     public Jogo() {
         gerenciadorSprites = new GerenciadorSprites();
@@ -48,15 +51,14 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         janelaJogo.setVisible(true);
         janelaJogo.setResizable(false);
         janelaJogo.setLocationRelativeTo(null);
-        janelaJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        janelaJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       
+            
         createBufferStrategy(2);
         estrategia = getBufferStrategy();
 
         setIgnoreRepaint(true);
-        janelaJogo.requestFocus();
-        janelaJogo.addKeyListener(this);
-        
+                
+        janelaJogo.setVisible(false);
         
     }
     
@@ -224,20 +226,58 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         }
         desenharFimJogo();
     }
-
-
-    public static void main(String[] args){
-        Jogo inv = new Jogo();
-        inv.jogo();  
+    
+    public static JFrame getJanelaAtual(){
+        return janelaAtual;
+    }
+    public static Jogo getJogoAtual(){
+        return jogoAtual;
     }
     
-    public void opcoes(){
-        JFrame janelaOp = new JFrame("Invasores Espaciais: Opções");
+    public static void main(String[] args){
+        Jogo novoJogo = new Jogo();
+        jogoAtual = novoJogo;
+        novoJogo.opcoes();
+    }
+    
+    public void opcoes(){ //janela de opções - contem erros
+        JFrame janelaOp = new JFrame();
+        JPanel panel = new JPanel();
+        JComboBox comboPlayer = new JComboBox<String>();
+        JButton btIniciar = new JButton();
         
+        janelaOp.setTitle("Invasores Espaciais: Opções");
+        janelaOp.setBounds(0, 0, 600, 300);
+        janelaOp.setVisible(true);
+        janelaOp.setResizable(false);
+        janelaOp.setLocationRelativeTo(null);
+        janelaOp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);     
+        
+        panel.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
+        
+        comboPlayer.setModel(new DefaultComboBoxModel<>(
+                new String[] { 
+                    "Imperium", 
+                    "Falcon"}
+        ));
+
+        btIniciar.setText("Iniciar Jogo");
+        btIniciar.addActionListener(this::btIniciarActionPerformed);
+        
+        janelaOp.add(panel);
+        panel.add(comboPlayer);
+        panel.add(btIniciar);
+
+        janelaAtual = janelaOp;
     }
     
     private void btIniciarActionPerformed(ActionEvent evt){                                         
-       
+        /*janelaAtual.dispose();*/
+        
+        jogoAtual.setVisible(true);
+        jogoAtual.requestFocus();
+        jogoAtual.addKeyListener(this);
+        jogoAtual.jogo();
     }   
     
     @Override
