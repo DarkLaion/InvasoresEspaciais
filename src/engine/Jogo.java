@@ -15,7 +15,6 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import javax.swing.border.*;
 
-
 /**
  * Código baseado no projeto de Soraia Teixeira Barbosa, desenvolvido na FAPERJ
  * como trabalho de conclusao de curso. e-mail: soraiatbarbosa@gmail.com, arcade
@@ -32,13 +31,16 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
     @SuppressWarnings("unused")
     private long tempo;
     private boolean fimJogo = false;
+
     private static Jogo jogoAtual;
     private static JFrame janelaAtual;
-    
+    private static JComboBox comboNave;
+    private static String imgNave;
+
     public Jogo() {
         gerenciadorSprites = new GerenciadorSprites();
         gerenciadorSons = new GerenciadorSons();
-        
+
         JFrame janelaJogo = new JFrame("Invasores Espaciais");
 
         JPanel panel = (JPanel) janelaJogo.getContentPane();
@@ -51,18 +53,17 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         janelaJogo.setVisible(true);
         janelaJogo.setResizable(false);
         janelaJogo.setLocationRelativeTo(null);
-        janelaJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       
-            
+        janelaJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         createBufferStrategy(2);
         estrategia = getBufferStrategy();
-
-        setIgnoreRepaint(true);
-                
-        janelaJogo.setVisible(false);
         
+        jogoAtual.setIgnoreRepaint(true);
+        jogoAtual.requestFocus();
+        jogoAtual.addKeyListener(this);  
     }
-    
-    public void iniciarNivel() {
+
+    public void iniciarNivel() { 
         personagens = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
@@ -75,7 +76,7 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
 
         jogador = new Jogador(this);
         jogador.setX(Nivel.WIDTH / 2);
-        jogador.setY(Nivel.HEIGHT - 1 * jogador.getHeight()-84);
+        jogador.setY(Nivel.HEIGHT - 1 * jogador.getHeight() - 84);
         gerenciadorSons.tocarSom("som/launch.wav");
         gerenciadorSons.repetirSom("som/fundo.wav");
     }
@@ -85,9 +86,8 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         personagens.add(a);
     }
 
-    public void atualizarNivel() {
+    public void atualizarNivel() {  
         int i = 0;
-
         while (i < personagens.size()) {
             Personagem inimigo = (Personagem) personagens.get(i);
 
@@ -102,9 +102,9 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
     }
 
     public void checarColisao() {
-            
+
         Rectangle limitesJogador = jogador.getLimites();
-        
+
         for (int i = 0; i < personagens.size(); i++) {
             Personagem a1 = (Personagem) personagens.get(i);
             Rectangle r1 = a1.getLimites();
@@ -169,13 +169,13 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         // Cor do retangulo
         g.setColor(Color.BLACK);
         // Tamanho do retangulo desenhado
-        g.fillRect(0, 0, Nivel.WIDTH, Nivel.HEIGHT-80);
+        g.fillRect(0, 0, Nivel.WIDTH, Nivel.HEIGHT - 80);
         // Cor da Fonte
         g.setColor(Color.RED);
         // Tipo e tamanho da fonte
         g.setFont(new Font("Arial", Font.BOLD, 60));
         // Menssage de fim de jogo
-        g.drawString("Fim do Jogo", Nivel.WIDTH /3 , Nivel.HEIGHT / 2);
+        g.drawString("Fim do Jogo", Nivel.WIDTH / 3, Nivel.HEIGHT / 2);
         estrategia.show();
     }
 
@@ -193,7 +193,7 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
     public Jogador getJogador() {
         return jogador;
     }
-    
+
     @Override
     public void keyPressed(KeyEvent e) {
         jogador.teclaLiberada(e);
@@ -203,8 +203,9 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
     public void keyReleased(KeyEvent e) {
         jogador.teclaPressionada(e);
     }
-    
+
     public void jogo() {
+        
         tempo = 1000;
         iniciarNivel();
 
@@ -226,62 +227,98 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         }
         desenharFimJogo();
     }
-    
-    public static JFrame getJanelaAtual(){
+
+    public static JFrame getJanelaAtual() {
         return janelaAtual;
     }
-    public static Jogo getJogoAtual(){
+
+    public static Jogo getJogoAtual() {
         return jogoAtual;
     }
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Jogo novoJogo = new Jogo();
         jogoAtual = novoJogo;
         novoJogo.opcoes();
     }
-    
-    public void opcoes(){ //janela de opções - contem erros
+
+    public String getImgNave() {
+        return imgNave;
+    }
+
+    public void opcoes() { //janela de opções - contem erros
         JFrame janelaOp = new JFrame();
         JPanel panel = new JPanel();
+        JLabel label = new JLabel();
         JComboBox comboPlayer = new JComboBox<String>();
         JButton btIniciar = new JButton();
-        
+
+        //propriedades da janela
+        janelaOp.setLayout(null);
         janelaOp.setTitle("Invasores Espaciais: Opções");
-        janelaOp.setBounds(0, 0, 600, 300);
+        janelaOp.setBounds(0, 0, 500, 300);
         janelaOp.setVisible(true);
         janelaOp.setResizable(false);
         janelaOp.setLocationRelativeTo(null);
-        janelaOp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);     
-        
+        janelaOp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //propriedades do panel
+        panel.setLayout(null);
         panel.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
-        
+        panel.setBounds(10, 10, janelaOp.getWidth() - 28, janelaOp.getHeight() - 50);
+
+        //propriedades do label
+        label.setText("Selecione sua nave:");
+        label.setSize(150, 30);
+        label.setLabelFor(comboPlayer);
+        label.setLocation(20, 70);
+
+        //propriedades do combo
+        comboPlayer.setSize(150, 30);
+        comboPlayer.setLocation(20, 100);
         comboPlayer.setModel(new DefaultComboBoxModel<>(
-                new String[] { 
-                    "Imperium", 
+                new String[]{
+                    "Imperium",
                     "Falcon"}
         ));
+        comboNave = comboPlayer;
+        comboPlayer.addActionListener(this::comboPlayerActionPerformed);
 
+        //propriedades do botao
         btIniciar.setText("Iniciar Jogo");
         btIniciar.addActionListener(this::btIniciarActionPerformed);
-        
+        btIniciar.setSize(400, 50);
+        btIniciar.setLocation(
+                panel.getWidth() / 2 - btIniciar.getWidth() / 2,
+                panel.getHeight() - btIniciar.getHeight() - 10);
+
+        //Adicionar componentes
         janelaOp.add(panel);
+        panel.add(label);
         panel.add(comboPlayer);
         panel.add(btIniciar);
 
         janelaAtual = janelaOp;
     }
-    
-    private void btIniciarActionPerformed(ActionEvent evt){                                         
-        /*janelaAtual.dispose();*/
-        
-        jogoAtual.setVisible(true);
-        jogoAtual.requestFocus();
-        jogoAtual.addKeyListener(this);
+
+    private void btIniciarActionPerformed(ActionEvent evt) {
+        janelaAtual.dispose();
+        if (imgNave == null) {
+            imgNave = "img/ship01.png";//default
+        }
         jogoAtual.jogo();
-    }   
-    
+    }
+
+    private void comboPlayerActionPerformed(ActionEvent evt) {
+        if (comboNave.getSelectedIndex() == 0) {
+            imgNave = "img/ship01.png"; //ship 01 = Falcom
+        } else if (comboNave.getSelectedIndex() == 1) {
+            imgNave = "img/ship02.png"; //ship 02 = Imperium
+        }
+    }
+
     @Override
     public void keyTyped(KeyEvent e) {
-        
+
     }
 }

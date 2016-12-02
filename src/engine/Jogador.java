@@ -40,7 +40,7 @@ public class Jogador extends Personagem {
 
     public Jogador(Nivel nivel) {
         super(nivel);
-        setColecaoSprites(new String[]{"img/ship01.png"});
+        setColecaoSprites(new String[]{jogoAtual.getImgNave()});
     }
 
     @Override
