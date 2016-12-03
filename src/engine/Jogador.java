@@ -2,6 +2,7 @@ package engine;
 
 //imports
 import java.awt.event.KeyEvent;
+import javax.swing.*;
 
 /**
  * Código baseado no projeto de Soraia Teixeira Barbosa, desenvolvido na FAPERJ
@@ -14,7 +15,7 @@ public class Jogador extends Personagem {
     protected static final int PLAYER_SPEED = 4;
     private boolean esquerda, direita;
     private int pontuacao = 0;
-    private Jogo jogoAtual = Jogo.getJogoAtual();
+    private final Jogo jogoAtual = Jogo.getJogoAtual();
 
     //getters
     public int getVx() {
@@ -67,10 +68,10 @@ public class Jogador extends Personagem {
     public void teclaLiberada(KeyEvent e) {
         switch (e.getKeyCode()) {
             case KeyEvent.VK_LEFT: 
-                esquerda = true;
+                esquerda = false;
                 break;
             case KeyEvent.VK_RIGHT: 
-                direita = true;
+                direita = false;
                 break;
         }
         atualizarVelocidade();
@@ -79,19 +80,25 @@ public class Jogador extends Personagem {
     public void teclaPressionada(KeyEvent e) {
         switch (e.getKeyCode()) {
             case KeyEvent.VK_LEFT: 
-                esquerda = false;
+                esquerda = true;
                 break;
             case KeyEvent.VK_RIGHT: 
-                direita = false;
+                direita = true;
                 break;
             case KeyEvent.VK_SPACE: 
                 atirar();
                 break;
-            case KeyEvent.VK_N:
-                jogoAtual.jogo();
+            case KeyEvent.VK_N: 
+                //jogar outra vez
+
                 break;
-            case KeyEvent.VK_S:
-                
+            case KeyEvent.VK_ESCAPE:
+                int resp = JOptionPane.showConfirmDialog(null, 
+                    "Deseja sair do Jogo?",
+                    "Invasores Espaciais", JOptionPane.YES_NO_OPTION);
+                if (resp == JOptionPane.YES_OPTION){
+                    System.exit(0);
+                }
                 break;
         }
         atualizarVelocidade();

@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  * Space Invaders Autores: Laionel e Cauê.
  */
 public class GerenciadorSons extends CacheRecursos {
-
+    
     @Override
     protected Object carregarRecurso(URL url) {
         try{
@@ -42,6 +42,6 @@ public class GerenciadorSons extends CacheRecursos {
     }
     
     public void pararSom(){
-
+        
     }
 }

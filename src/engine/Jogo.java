@@ -42,28 +42,28 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         gerenciadorSons = new GerenciadorSons();
 
         JFrame janelaJogo = new JFrame("Invasores Espaciais");
-
+        janelaJogo.setBounds(0, 0, Nivel.WIDTH, Nivel.HEIGHT);
+        janelaJogo.setVisible(true);
+        janelaJogo.setResizable(false);
+        janelaJogo.setLocationRelativeTo(null);
+        janelaJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         JPanel panel = (JPanel) janelaJogo.getContentPane();
         setBounds(0, 0, Nivel.WIDTH, Nivel.HEIGHT);
         panel.setPreferredSize(new Dimension(Nivel.WIDTH, Nivel.HEIGHT));
         panel.setLayout(null);
         panel.add(this);
 
-        janelaJogo.setBounds(0, 0, Nivel.WIDTH, Nivel.HEIGHT);
-        janelaJogo.setVisible(true);
-        janelaJogo.setResizable(false);
-        janelaJogo.setLocationRelativeTo(null);
-        janelaJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        createBufferStrategy(2);
+        createBufferStrategy(3);
         estrategia = getBufferStrategy();
-        
-        jogoAtual.setIgnoreRepaint(true);
-        jogoAtual.requestFocus();
-        jogoAtual.addKeyListener(this);  
+
+        janelaJogo.setIgnoreRepaint(true);
+        janelaJogo.requestFocus();
+        janelaJogo.addKeyListener(this);
     }
 
-    public void iniciarNivel() { 
+    //Nivel
+    public void iniciarNivel() {
         personagens = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
@@ -81,12 +81,14 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         gerenciadorSons.repetirSom("som/fundo.wav");
     }
 
+    // adicionar personagem
     @Override
     public void addPersonagem(Personagem a) {
         personagens.add(a);
     }
 
-    public void atualizarNivel() {  
+    // atualizar nivel
+    public void atualizarNivel() {
         int i = 0;
         while (i < personagens.size()) {
             Personagem inimigo = (Personagem) personagens.get(i);
@@ -101,10 +103,10 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         jogador.acao();
     }
 
+    // checar colisao
     public void checarColisao() {
-
         Rectangle limitesJogador = jogador.getLimites();
-
+        
         for (int i = 0; i < personagens.size(); i++) {
             Personagem a1 = (Personagem) personagens.get(i);
             Rectangle r1 = a1.getLimites();
@@ -125,13 +127,14 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
             }
         }
     }
-
+    // fim do jogo
     @Override
     public void fimJogo() {
         fimJogo = true;
+        gerenciadorSons.pararSom();
     }
 
-    //Metodo que desenha a pontuação, nivel e fim
+    //Metodo que desenha as intruções ,pontuação, nivel e fim
     public void desenharPontuacao(Graphics2D g) {
         // Cor de fundo
         g.setColor(Color.GRAY);
@@ -142,12 +145,17 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         g.setFont(new Font("Arial", Font.BOLD, 20));
         // Cor da fonte texto
         g.setPaint(Color.BLACK);
-        g.drawString("PONTOS:", 20, Nivel.PLAY_HEIGHT + 20);
+        g.drawString("PONTOS:", 20, Nivel.PLAY_HEIGHT + 25);
         // Cor da fonte pontos
         g.setPaint(Color.YELLOW);
-        g.drawString(jogador.getPontuacao() + "", 120, Nivel.PLAY_HEIGHT + 20);
+        g.drawString(jogador.getPontuacao() + "", 120, Nivel.PLAY_HEIGHT + 25);
+        //Instruções
+        g.setFont(new Font("Arial", Font.BOLD, 15));
+        g.setPaint(Color.WHITE);
+        g.drawString("ESPAÇO Atirar, <- Esquerda, Direita ->, ESC Sair",
+               this.getWidth()/2, Nivel.PLAY_HEIGHT + 35);
     }
-
+    
     public void desenharNivel() {
         Graphics2D g = (Graphics2D) estrategia.getDrawGraphics();
         // Cor da Fonte
@@ -178,7 +186,8 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         g.drawString("Fim do Jogo", Nivel.WIDTH / 3, Nivel.HEIGHT / 2);
         estrategia.show();
     }
-
+    
+    // getters
     @Override
     public GerenciadorSprites getGerenciadorSprites() {
         return gerenciadorSprites;
@@ -194,18 +203,23 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         return jogador;
     }
 
-    @Override
-    public void keyPressed(KeyEvent e) {
-        jogador.teclaLiberada(e);
+    public static JFrame getJanelaAtual() {
+        return janelaAtual;
     }
 
-    @Override
-    public void keyReleased(KeyEvent e) {
-        jogador.teclaPressionada(e);
+    public static Jogo getJogoAtual() {
+        return jogoAtual;
+    }
+    
+    public String getImgNave() {
+        if ("".equals(imgNave)){
+            return imgNave = "recursos/img/ship01.png";//Padrao
+        }else{
+        return imgNave;
+        }
     }
 
     public void jogo() {
-        
         tempo = 1000;
         iniciarNivel();
 
@@ -227,30 +241,21 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         }
         desenharFimJogo();
     }
-
-    public static JFrame getJanelaAtual() {
-        return janelaAtual;
-    }
-
-    public static Jogo getJogoAtual() {
-        return jogoAtual;
-    }
-
+       
+    // Metodo pricipal
     public static void main(String[] args) {
+
         Jogo novoJogo = new Jogo();
         jogoAtual = novoJogo;
         novoJogo.opcoes();
     }
 
-    public String getImgNave() {
-        return imgNave;
-    }
-
-    public void opcoes() { //janela de opções - contem erros
+    //janela de opções - contem erros
+    public void opcoes() { 
         JFrame janelaOp = new JFrame();
         JPanel panel = new JPanel();
         JLabel label = new JLabel();
-        JComboBox comboPlayer = new JComboBox<String>();
+        JComboBox comboPlayer = new JComboBox<>();
         JButton btIniciar = new JButton();
 
         //propriedades da janela
@@ -290,7 +295,8 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         btIniciar.setSize(400, 50);
         btIniciar.setLocation(
                 panel.getWidth() / 2 - btIniciar.getWidth() / 2,
-                panel.getHeight() - btIniciar.getHeight() - 10);
+                panel.getHeight() - btIniciar.getHeight() - 10
+        );
 
         //Adicionar componentes
         janelaOp.add(panel);
@@ -298,15 +304,17 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         panel.add(comboPlayer);
         panel.add(btIniciar);
 
+        imgNave = "img/ship01.png"; //ship 01 = Falcom
         janelaAtual = janelaOp;
     }
 
     private void btIniciarActionPerformed(ActionEvent evt) {
         janelaAtual.dispose();
-        if (imgNave == null) {
-            imgNave = "img/ship01.png";//default
-        }
+        jogoAtual.setIgnoreRepaint(true);
+        jogoAtual.requestFocus();
+        jogoAtual.addKeyListener(this);
         jogoAtual.jogo();
+        
     }
 
     private void comboPlayerActionPerformed(ActionEvent evt) {
@@ -316,7 +324,16 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
             imgNave = "img/ship02.png"; //ship 02 = Imperium
         }
     }
+        @Override
+    public void keyPressed(KeyEvent e) {
+        jogador.teclaPressionada(e);
+    }
 
+    @Override
+    public void keyReleased(KeyEvent e) {
+        jogador.teclaLiberada(e);
+    }
+    
     @Override
     public void keyTyped(KeyEvent e) {
 
