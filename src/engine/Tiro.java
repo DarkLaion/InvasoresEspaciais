@@ -1,9 +1,8 @@
 package engine;
 
 /**
- * Código baseado no projeto de Soraia Teixeira Barbosa, desenvolvido na FAPERJ
- * como trabalho de conclusao de curso. e-mail: soraiatbarbosa@gmail.com, arcade
- * Space Invaders Autores: Laionel e Cauê.
+ *
+ * @author Laionel e Cauê
  */
 public class Tiro extends Personagem {
 

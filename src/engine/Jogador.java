@@ -5,9 +5,8 @@ import java.awt.event.KeyEvent;
 import javax.swing.*;
 
 /**
- * Código baseado no projeto de Soraia Teixeira Barbosa, desenvolvido na FAPERJ
- * como trabalho de conclusao de curso. e-mail: soraiatbarbosa@gmail.com, arcade
- * Space Invaders Autores: Laionel e Cauê.
+ *
+ * @author Laionel e Cauê
  */
 public class Jogador extends Personagem {
 
@@ -15,7 +14,8 @@ public class Jogador extends Personagem {
     protected static final int PLAYER_SPEED = 4;
     private boolean esquerda, direita;
     private int pontuacao = 0;
-    private final Jogo jogoAtual = Jogo.getJogoAtual();
+    
+    private String imgNave = JogoOpcoes.getImgNave();
 
     //getters
     public int getVx() {
@@ -41,7 +41,7 @@ public class Jogador extends Personagem {
 
     public Jogador(Nivel nivel) {
         super(nivel);
-        setColecaoSprites(new String[]{jogoAtual.getImgNave()});
+        setColecaoSprites(new String[]{imgNave});
     }
 
     @Override

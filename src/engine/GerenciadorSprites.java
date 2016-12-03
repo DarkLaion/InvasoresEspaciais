@@ -8,9 +8,8 @@ import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 
 /**
- * Código baseado no projeto de Soraia Teixeira Barbosa, desenvolvido na FAPERJ
- * como trabalho de conclusao de curso. e-mail: soraiatbarbosa@gmail.com, arcade
- * Space Invaders Autores: Laionel e Cauê.
+ *
+ * @author Laionel e Cauê
  */
 public class GerenciadorSprites extends CacheRecursos {
 

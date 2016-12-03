@@ -4,13 +4,16 @@ package engine;
 import java.awt.image.ImageObserver;
 
 /**
- * Código baseado no projeto de Soraia Teixeira Barbosa, desenvolvido na FAPERJ
- * como trabalho de conclusao de curso. e-mail: soraiatbarbosa@gmail.com, arcade
- * Space Invaders Autores: Laionel e Cauê.
+ *
+ * @author Laionel e Cauê
  */
 public interface Nivel extends ImageObserver {
 
     public static final int 
+            MINWIDTH = 1000,
+            MINHEIGHT = 700,
+            MAXWIDTH = 1000,
+            MAXHEIGHT = 700,
             WIDTH = 1000,
             HEIGHT = 700,
             PLAY_HEIGHT = HEIGHT - 80,

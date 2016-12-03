@@ -8,12 +8,11 @@ import java.net.URL;
 import javax.swing.JOptionPane;
 
 /**
- * Código baseado no projeto de Soraia Teixeira Barbosa, desenvolvido na FAPERJ
- * como trabalho de conclusao de curso. e-mail: soraiatbarbosa@gmail.com, arcade
- * Space Invaders Autores: Laionel e Cauê.
+ *
+ * @author Laionel e Cauê
  */
 public class GerenciadorSons extends CacheRecursos {
-    
+
     @Override
     protected Object carregarRecurso(URL url) {
         try{
