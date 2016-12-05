@@ -34,6 +34,7 @@ public class JogoOpcoes extends JFrame {
 
         //propriedades da janela
         janelaOp.setLayout(null);
+        janelaOp.setIconImage(gerenciadorSprites.getSprite("img/alien00.png"));
         janelaOp.setTitle("Invasores Espaciais: Opções");
         janelaOp.setBounds(0, 0, 500, 300);
         janelaOp.setVisible(true);

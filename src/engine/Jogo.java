@@ -44,6 +44,7 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         panel.add(this);
 
         janelaJogo.setBounds(0, 0, Nivel.WIDTH, Nivel.HEIGHT);
+        janelaJogo.setIconImage(gerenciadorSprites.getSprite("img/alien00.png"));
         janelaJogo.setVisible(true);
         janelaJogo.setResizable(false);
         janelaJogo.setLocationRelativeTo(null);
