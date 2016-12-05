@@ -29,15 +29,18 @@ public class Inimigo extends Personagem {
     public Inimigo(Nivel nivel) {
         super(nivel);
         setColecaoSprites(new String[]{
-            "img/alien01.png", 
-            "img/alien02.png", 
+            "img/alien01.png",
+            "img/alien02.png",
+            "img/alien03.png",
+            "img/alien04.png",
+            "img/alien05.png"
         });
         setVelocidadeFrame(35);
     }
 
     @Override
     public void acao() {
-    super.acao();
+        super.acao();
         x += vx;
         y += vy;
         if (x < 0) {
@@ -56,18 +59,21 @@ public class Inimigo extends Personagem {
             nivel.fimJogo();
         }
     }
- 
+
     public void gerarInimigo() {
         Inimigo a = new Inimigo(nivel);
         a.setX((int) (Math.random() * Nivel.PLAY_HEIGHT));
         a.setY((int) (Math.random() * Nivel.PLAY_HEIGHT / 2));
-        a.setVx((int)(Math.random() * 30 - 10));
+        a.setVx((int) (Math.random() * 30 - 10));
         nivel.addPersonagem(a);
     }
 
     @Override
     public void colisao(Personagem a) {
         if (a instanceof Tiro) {
+            a.setColecaoSprites(new String[]{
+                "img/alienBoom01.png"
+            });
             setRemover();
             // Adicionar Pontuação
             nivel.getJogador().addPontuacao(10);
@@ -75,6 +81,6 @@ public class Inimigo extends Personagem {
             gerarInimigo();
             a.setRemover();
         }
-        
+
     }
 }

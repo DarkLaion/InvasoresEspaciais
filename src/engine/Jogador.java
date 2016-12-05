@@ -1,6 +1,7 @@
 package engine;
 
 //imports
+import com.sun.glass.ui.Application;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
 
@@ -14,7 +15,7 @@ public class Jogador extends Personagem {
     protected static final int PLAYER_SPEED = 4;
     private boolean esquerda, direita;
     private int pontuacao = 0;
-    
+
     private String imgNave = JogoOpcoes.getImgNave();
 
     //getters
@@ -67,10 +68,10 @@ public class Jogador extends Personagem {
 
     public void teclaLiberada(KeyEvent e) {
         switch (e.getKeyCode()) {
-            case KeyEvent.VK_LEFT: 
+            case KeyEvent.VK_LEFT:
                 esquerda = false;
                 break;
-            case KeyEvent.VK_RIGHT: 
+            case KeyEvent.VK_RIGHT:
                 direita = false;
                 break;
         }
@@ -79,24 +80,23 @@ public class Jogador extends Personagem {
 
     public void teclaPressionada(KeyEvent e) {
         switch (e.getKeyCode()) {
-            case KeyEvent.VK_LEFT: 
+            case KeyEvent.VK_LEFT:
                 esquerda = true;
                 break;
-            case KeyEvent.VK_RIGHT: 
+            case KeyEvent.VK_RIGHT:
                 direita = true;
                 break;
-            case KeyEvent.VK_SPACE: 
+            case KeyEvent.VK_SPACE:
                 atirar();
                 break;
-            case KeyEvent.VK_N: 
-                //jogar outra vez
+            case KeyEvent.VK_N:
 
                 break;
             case KeyEvent.VK_ESCAPE:
-                int resp = JOptionPane.showConfirmDialog(null, 
-                    "Deseja sair do Jogo?",
-                    "Invasores Espaciais", JOptionPane.YES_NO_OPTION);
-                if (resp == JOptionPane.YES_OPTION){
+                int resp = JOptionPane.showConfirmDialog(null,
+                        "Deseja sair do Jogo?",
+                        "Invasores Espaciais", JOptionPane.YES_NO_OPTION);
+                if (resp == JOptionPane.YES_OPTION) {
                     System.exit(0);
                 }
                 break;

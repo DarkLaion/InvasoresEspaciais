@@ -19,8 +19,10 @@ public class JogoOpcoes extends JFrame {
     private static JComboBox comboPlayer;
     private static JButton btIniciar;
     private ImageIcon imagem;
+    private Boolean jogar;
 
     public JogoOpcoes() {
+        jogar = false;
         gerenciadorSprites = new GerenciadorSprites();
         janelaOp = new JFrame();
         panel = new JPanel();
@@ -107,15 +109,21 @@ public class JogoOpcoes extends JFrame {
         labelLogo.setIcon(imagem);
     }
 
+    public void setJogar() {
+        jogar = true;
+    }
+
     public static String getImgNave() {
         return imgNave;
     }
 
-    private void btIniciarActionPerformed(ActionEvent evt) {
-        janelaOp.dispose();
+    public Boolean getJogar() {
+        return jogar;
+    }
 
-        Jogo novoJogo = new Jogo();
-        novoJogo.jogo();
+    private void btIniciarActionPerformed(ActionEvent evt) {
+        setJogar();
+        janelaOp.dispose();
     }
 
     private void comboPlayerActionPerformed(ActionEvent evt) {
@@ -127,7 +135,7 @@ public class JogoOpcoes extends JFrame {
         setImgNave();
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         new JogoOpcoes();
-    }
+    }*/
 }

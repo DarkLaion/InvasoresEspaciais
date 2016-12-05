@@ -7,20 +7,185 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="60.689999"
-   height="33.710697"
-   viewBox="0 0 60.689997 33.710697"
+   width="60.59"
+   height="32.970711"
+   viewBox="0 0 60.589999 32.970711"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEpaciais\src\recursos\img\alien01.png"
+   inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
    inkscape:export-xdpi="89.699997"
    inkscape:export-ydpi="89.699997"
    sodipodi:docname="alien.svg">
   <defs
-     id="defs4" />
+     id="defs4">
+    <linearGradient
+       id="linearGradient3860">
+      <stop
+         offset="0"
+         style="stop-color:#b39000;stop-opacity:0"
+         id="stop3862" />
+      <stop
+         offset=".5"
+         style="stop-color:#b28f00;stop-opacity:0.8"
+         id="stop3868" />
+      <stop
+         offset="1"
+         style="stop-color:#b28d00;stop-opacity:0.8"
+         id="stop3864" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter7822-1">
+      <feGaussianBlur
+         stdDeviation="4.0248438"
+         id="feGaussianBlur7824-7" />
+    </filter>
+    <radialGradient
+       r="198.83"
+       gradientTransform="matrix(1.2134 -3.459e-7 3.8323e-7 1.3444 -145.13 -280.73)"
+       cx="680.14"
+       cy="815.24"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient3945">
+      <stop
+         offset="0"
+         stop-color="#fc0"
+         id="stop7780-0" />
+      <stop
+         offset="1"
+         stop-opacity=".96471"
+         stop-color="#e40039"
+         id="stop7782-9" />
+    </radialGradient>
+    <radialGradient
+       r="136.7"
+       gradientTransform="matrix(1.4947 .014182 -.0097182 1.0242 -328.72 -29.543)"
+       cx="680.14"
+       cy="815.24"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient3947">
+      <stop
+         offset="0"
+         stop-color="#ffd600"
+         id="stop7792-8" />
+      <stop
+         offset="1"
+         stop-opacity="0"
+         stop-color="#fc0"
+         id="stop7794-8" />
+    </radialGradient>
+    <linearGradient
+       y2="77"
+       x2="7"
+       gradientTransform="translate(-75.46988,1021.4354)"
+       y1="10"
+       gradientUnits="userSpaceOnUse"
+       x1="69"
+       id="linearGradient4479">
+      <stop
+         offset="0"
+         stop-color="#47b6de"
+         id="stop3034" />
+      <stop
+         offset="1"
+         stop-color="#1e7fdd"
+         id="stop3036" />
+    </linearGradient>
+    <linearGradient
+       y2="71.034"
+       x2="45.891"
+       gradientTransform="matrix(1,0,0,0.40559,-75.46988,1021.4354)"
+       y1="10"
+       gradientUnits="userSpaceOnUse"
+       x1="69"
+       id="linearGradient5015">
+      <stop
+         offset="0"
+         stop-color="#a3d4ff"
+         id="stop3040" />
+      <stop
+         offset="1"
+         stop-color="#cfe3ff"
+         id="stop3044" />
+    </linearGradient>
+    <radialGradient
+       r="198.83"
+       gradientTransform="matrix(1.2134 -3.459e-7 3.8323e-7 1.3444 -145.13 -280.73)"
+       cx="680.14"
+       cy="815.24"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient5053">
+      <stop
+         offset="0"
+         stop-color="#2ad4ff"
+         id="stop7384" />
+      <stop
+         offset="1"
+         stop-opacity="0"
+         stop-color="#fff"
+         id="stop7386" />
+    </radialGradient>
+    <radialGradient
+       r="136.7"
+       gradientTransform="matrix(1.4947,0.014182,-0.0097182,1.0242,-328.72,-29.543)"
+       cx="680.14"
+       cy="815.24"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient5059">
+      <stop
+         offset="0"
+         stop-color="#141e00"
+         id="stop7573" />
+      <stop
+         offset=".61788"
+         stop-color="#0094ff"
+         id="stop7575" />
+      <stop
+         offset="1"
+         stop-color="#00d1e1"
+         id="stop7577" />
+    </radialGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#radialGradient3945"
+       id="radialGradient4495"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2134,-3.459e-7,3.8323e-7,1.3444,-145.13,-280.73)"
+       cx="680.14"
+       cy="815.24"
+       r="198.83" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#radialGradient3947"
+       id="radialGradient4497"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.4947,0.014182,-0.0097182,1.0242,-328.72,-29.543)"
+       cx="680.14"
+       cy="815.24"
+       r="136.7" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#radialGradient3945"
+       id="radialGradient4499"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2134,-3.459e-7,3.8323e-7,1.3444,-145.13,-280.73)"
+       cx="680.14"
+       cy="815.24"
+       r="198.83" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#radialGradient3947"
+       id="radialGradient4501"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.4947,0.014182,-0.0097182,1.0242,-328.72,-29.543)"
+       cx="680.14"
+       cy="815.24"
+       r="136.7" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -28,9 +193,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
-     inkscape:cx="27.329415"
-     inkscape:cy="16.263155"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-87.095212"
+     inkscape:cy="-9.4335486"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,7 +208,8 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:snap-object-midpoints="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -52,7 +218,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,35 +226,48 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-1.704842,-1002.6044)">
+     transform="translate(-1.804842,-1003.3444)">
     <ellipse
-       style="opacity:1;fill:#527486;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.93999999;fill:#527486;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4174"
-       cx="32"
-       cy="1023.2562"
+       cx="-130.14285"
+       cy="1044.6848"
        rx="30.195158"
-       ry="12.65874" />
+       ry="12.65874"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
     <ellipse
        ry="9.45436"
        rx="24.732916"
-       cy="1018.4583"
-       cx="32"
+       cy="1039.8868"
+       cx="-130.14285"
        id="ellipse4178"
-       style="opacity:1;fill:#667e90;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.09795046;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
+       style="opacity:0.93999999;fill:#667e90;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.09795046;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
     <path
-       style="opacity:1;fill:#677486;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.93999999;fill:#677486;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path5422"
        sodipodi:type="arc"
-       sodipodi:cx="32"
-       sodipodi:cy="1016.9957"
+       sodipodi:cx="-130.14285"
+       sodipodi:cy="1038.4243"
        sodipodi:rx="16.446547"
        sodipodi:ry="5.6280417"
        sodipodi:start="0"
        sodipodi:end="6.0833626"
        sodipodi:open="true"
-       d="m 48.446547,1016.9957 a 16.446547,5.6280417 0 0 1 -15.62529,5.621 16.446547,5.6280417 0 0 1 -17.185785,-5.0596 16.446547,5.6280417 0 0 1 13.908949,-6.1263 16.446547,5.6280417 0 0 1 18.574869,4.4478" />
+       d="m -113.69631,1038.4243 a 16.446547,5.6280417 0 0 1 -15.62529,5.621 16.446547,5.6280417 0 0 1 -17.18578,-5.0596 16.446547,5.6280417 0 0 1 13.90895,-6.1263 16.446547,5.6280417 0 0 1 18.57487,4.4478"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
     <g
-       id="g5431">
+       id="g5431"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89"
+       transform="translate(-162.14286,21.428571)">
       <path
          sodipodi:nodetypes="sssss"
          inkscape:connector-curvature="0"
@@ -136,130 +315,223 @@
          style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
     </g>
     <path
-       style="opacity:1;fill:#c2f3fd;fill-opacity:0.39215686;fill-rule:nonzero;stroke:none;stroke-width:3.58787704;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
-       d="m 49.542214,1017.3219 c -1e-5,3.6748 -7.79327,6.6538 -17.40674,6.6538 -9.613473,0 -17.406723,-2.979 -17.406733,-6.6538 -10e-6,-3.6749 7.79325,-13.9775 17.406733,-13.9775 9.61348,0 17.40675,10.3026 17.40674,13.9775 z"
+       style="opacity:0.93999999;fill:#c2f3fd;fill-opacity:0.39215686;fill-rule:nonzero;stroke:none;stroke-width:3.58787704;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       d="m -112.60064,1038.7505 c -1e-5,3.6748 -7.79327,6.6538 -17.40674,6.6538 -9.61348,0 -17.40673,-2.979 -17.40674,-6.6538 -1e-5,-3.6749 7.79325,-13.9775 17.40674,-13.9775 9.61348,0 17.40675,10.3026 17.40674,13.9775 z"
        id="ellipse4180"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssss" />
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
     <ellipse
        ry="12.65874"
        rx="30.295"
-       cy="1023.6564"
-       cx="32.099842"
+       cy="1045.085"
+       cx="-130.04301"
        id="ellipse4150"
-       style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:6.51787138;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
-    <g
-       id="g5379"
-       transform="translate(-0.3044078,1.1364216)">
-      <circle
-         r="1.6414979"
-         cy="1030.2214"
-         cx="46.561531"
-         id="circle4200"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
-      <circle
-         style="opacity:1;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
-         id="circle5366"
-         cx="46.561531"
-         cy="1030.2214"
-         r="1.4520942" />
-      <path
-         sodipodi:nodetypes="sssss"
-         inkscape:connector-curvature="0"
-         id="path5376"
-         d="m 45.828507,1029.8057 c -4e-6,0.2836 0.343152,0.4826 0.107814,0.4826 -0.235338,0 -0.426118,-0.2299 -0.426122,-0.5134 -6e-6,-0.2836 0.190777,-0.5134 0.426122,-0.5134 0.235345,0 -0.107807,0.2607 -0.107814,0.5442 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <g
-       id="g5384"
-       transform="translate(-14.962884,3.0304576)">
-      <circle
-         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
-         id="circle5386"
-         cx="46.561531"
-         cy="1030.2214"
-         r="1.6414979" />
-      <circle
-         r="1.4520942"
-         cy="1030.2214"
-         cx="46.561531"
-         id="circle5388"
-         style="opacity:1;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
-      <path
-         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 45.828507,1029.8057 c -4e-6,0.2836 0.343152,0.4826 0.107814,0.4826 -0.235338,0 -0.426118,-0.2299 -0.426122,-0.5134 -6e-6,-0.2836 0.190777,-0.5134 0.426122,-0.5134 0.235345,0 -0.107807,0.2607 -0.107814,0.5442 z"
-         id="path5390"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="sssss" />
-    </g>
-    <g
-       transform="translate(-29.621358,0.63134534)"
-       id="g5392">
-      <circle
-         r="1.6414979"
-         cy="1030.2214"
-         cx="46.561531"
-         id="circle5394"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
-      <circle
-         style="opacity:1;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
-         id="circle5396"
-         cx="46.561531"
-         cy="1030.2214"
-         r="1.4520942" />
-      <path
-         sodipodi:nodetypes="sssss"
-         inkscape:connector-curvature="0"
-         id="path5398"
-         d="m 45.828507,1029.8057 c -4e-6,0.2836 0.343152,0.4826 0.107814,0.4826 -0.235338,0 -0.426118,-0.2299 -0.426122,-0.5134 -6e-6,-0.2836 0.190777,-0.5134 0.426122,-0.5134 0.235345,0 -0.107807,0.2607 -0.107814,0.5442 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
+       style="opacity:0.93999999;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:6.51787138;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       id="circle4200"
+       cx="-115.88573"
+       cy="1052.7865"
+       r="1.6414979"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <circle
+       r="1.4520942"
+       cy="1052.7865"
+       cx="-115.88573"
+       id="circle5366"
+       style="opacity:1;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -116.61876,1052.3707 c 0,0.2836 0.34315,0.4826 0.10782,0.4826 -0.23534,0 -0.42612,-0.2299 -0.42613,-0.5134 0,-0.2836 0.19078,-0.5134 0.42613,-0.5134 0.23534,0 -0.10781,0.2607 -0.10782,0.5442 z"
+       id="path5376"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
     <circle
        r="1.6414979"
-       cy="1024.2867"
-       cx="58.9156"
-       id="circle5402"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
+       cy="1054.6805"
+       cx="-130.5442"
+       id="circle5386"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
     <circle
        style="opacity:1;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       id="circle5388"
+       cx="-130.5442"
+       cy="1054.6805"
+       r="1.4520942"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       id="path5390"
+       d="m -131.27723,1054.2648 c -1e-5,0.2836 0.34315,0.4826 0.10781,0.4826 -0.23534,0 -0.42612,-0.2299 -0.42612,-0.5134 -1e-5,-0.2836 0.19077,-0.5134 0.42612,-0.5134 0.23534,0 -0.10781,0.2607 -0.10781,0.5442 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       id="circle5394"
+       cx="-145.20268"
+       cy="1052.2814"
+       r="1.6414979"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <circle
+       r="1.4520942"
+       cy="1052.2814"
+       cx="-145.20268"
+       id="circle5396"
+       style="opacity:1;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -145.93571,1051.8656 c 0,0.2836 0.34315,0.4826 0.10782,0.4826 -0.23534,0 -0.42612,-0.2299 -0.42613,-0.5134 0,-0.2836 0.19078,-0.5134 0.42613,-0.5134 0.23534,0 -0.10781,0.2607 -0.10782,0.5442 z"
+       id="path5398"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <circle
+       r="1.6414979"
+       cy="1045.7153"
+       cx="-103.22726"
+       id="circle5402"
+       style="opacity:0.93999999;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <circle
+       style="opacity:0.93999999;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
        id="circle5404"
-       cx="58.9156"
-       cy="1024.2867"
-       r="1.4520942" />
+       cx="-103.22726"
+       cy="1045.7153"
+       r="1.4520942"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
     <path
        sodipodi:nodetypes="sssss"
        inkscape:connector-curvature="0"
        id="path5406"
-       d="m 58.182577,1023.8711 c -4e-6,0.2836 0.343152,0.4826 0.107814,0.4826 -0.235338,0 -0.426118,-0.2299 -0.426122,-0.5134 -6e-6,-0.2836 0.190777,-0.5134 0.426122,-0.5134 0.235345,0 -0.107807,0.2607 -0.107814,0.5442 z"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <g
-       transform="translate(-42.279832,-5.9346462)"
-       id="g5408">
-      <circle
-         r="1.6414979"
-         cy="1030.2214"
-         cx="46.561531"
-         id="circle5410"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
-      <circle
-         style="opacity:1;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
-         id="circle5412"
-         cx="46.561531"
-         cy="1030.2214"
-         r="1.4520942" />
-      <path
-         sodipodi:nodetypes="sssss"
-         inkscape:connector-curvature="0"
-         id="path5414"
-         d="m 45.828507,1029.8057 c -4e-6,0.2836 0.343152,0.4826 0.107814,0.4826 -0.235338,0 -0.426118,-0.2299 -0.426122,-0.5134 -6e-6,-0.2836 0.190777,-0.5134 0.426122,-0.5134 0.235345,0 -0.107807,0.2607 -0.107814,0.5442 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
+       d="m -103.96028,1045.2997 c 0,0.2836 0.34315,0.4826 0.10781,0.4826 -0.23533,0 -0.42611,-0.2299 -0.42612,-0.5134 0,-0.2836 0.19078,-0.5134 0.42612,-0.5134 0.23535,0 -0.1078,0.2607 -0.10781,0.5442 z"
+       style="opacity:0.93999999;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       id="circle5410"
+       cx="-157.86116"
+       cy="1045.7153"
+       r="1.6414979"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <circle
+       r="1.4520942"
+       cy="1045.7153"
+       cx="-157.86116"
+       id="circle5412"
+       style="opacity:1;fill:#aad8e4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.08661413;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
     <path
-       transform="matrix(0.86033257,0.50973314,-0.50973314,0.86033257,0,0)"
        style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 532.28185,861.59293 c 0,2.44078 0.90029,4.46505 0.37727,4.46504 -0.52302,1e-5 -0.94702,-1.97864 -0.94702,-4.41942 0,-2.44078 0.424,-4.41943 0.94702,-4.41942 0.52302,-10e-6 -0.37727,1.93301 -0.37727,4.3738 z"
+       d="m -158.59418,1045.2997 c -1e-5,0.2836 0.34315,0.4826 0.10781,0.4826 -0.23534,0 -0.42612,-0.2299 -0.42612,-0.5134 -1e-5,-0.2836 0.19078,-0.5134 0.42612,-0.5134 0.23535,0 -0.10781,0.2607 -0.10781,0.5442 z"
+       id="path5414"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <path
+       style="opacity:0.93999999;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.06999969;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -142.38592,1034.0068 c -1.24414,2.0998 -1.50143,4.3003 -1.9514,4.0337 -0.44997,-0.2666 0.19383,-2.185 1.43798,-4.2849 1.24414,-2.0999 2.61751,-3.5861 3.06747,-3.3195 0.44998,0.2666 -1.30989,1.4708 -2.55405,3.5707 z"
        id="path5416"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="scscs" />
+       sodipodi:nodetypes="scscs"
+       inkscape:export-filename="C:\Users\Usuario\OneDrive\IFSP-TSI\POO\Invasores do Espaço\InvasoresEspaciais\src\recursos\img\alienBoom01.png"
+       inkscape:export-xdpi="89"
+       inkscape:export-ydpi="89" />
+    <g
+       id="g4578"
+       transform="matrix(1.449731,-0.13103598,0.13377992,0.80544757,-36.365742,227.57298)">
+      <g
+         id="g4571">
+        <g
+           style="fill-rule:evenodd"
+           transform="matrix(-0.00426561,0.09124251,-0.0907944,-0.00709351,-4.0273473,1001.5454)"
+           id="g13586">
+          <path
+             d="m 753.78,611.58 c 0,0 -38.635,81.371 -72.125,90.531 -15.44,4.2234 -41.508,-6.9372 -61.469,-17.562 -20.67,-18.162 -36.969,-35.563 -36.969,-35.563 0,10e-5 44.177,91.108 32.844,118.31 -0.0476,0.1143 -0.1057,0.2297 -0.1562,0.3437 -30.496,14.173 -99.719,13.656 -99.719,13.656 0,-10e-5 21.54,7.2666 43.344,17.406 -34.847,10.197 -72.562,15.469 -72.562,15.469 0,-10e-5 97.365,14.869 110.03,37.437 1.3333,2.3756 2.4604,5.0213 3.375,7.875 -13.902,38.054 -54.5,90.094 -54.5,90.094 0,0 27.329,-18.986 56.031,-33.906 -4.1834,32.112 -13.375,62.031 -13.375,62.031 0,0 55.32,-57.153 86.25,-56.531 2.4844,0.0499 5.1023,0.4703 7.8125,1.1562 22.778,35.192 41.5,96.562 41.5,96.562 0,0 -0.2061,-36.786 4.2812,-69.062 21.486,17.888 39.031,37.531 39.031,37.531 0,0 -23.497,-56.309 -17.906,-86.687 22.618,-12.459 64.77,-12.18 92.688,-10.313 23.62,7.864 42.438,16.719 42.438,16.719 0,0 -8.3948,-5.7735 -19.625,-14.656 2.9774,0.3541 4.75,0.5937 4.75,0.5937 0,0 -26.288,-18.454 -46.531,-39.781 -9.0061,-10.797 -15.676,-21.794 -16.75,-31.5 -3.1472,-28.429 47.438,-82.719 47.438,-82.719 0,0 -13.59,8.7993 -31.188,16.344 13.726,-22.289 28.625,-40.531 28.625,-40.531 0,0 -73.41,45.276 -97.562,26.875 -1.3094,-0.9976 -2.4982,-2.1595 -3.5938,-3.4375 -5.7022,-34.414 3.9063,-92.344 3.9063,-92.344 0,-10e-5 -4.7423,9.0481 -11.844,20.937 3.919,-29.203 11.531,-55.281 11.531,-55.281 z"
+             transform="matrix(1.1219,0,0,1.1219,-83.597,-99.375)"
+             id="path13588"
+             inkscape:connector-curvature="0"
+             style="opacity:0.68269001;filter:url(#filter7822-1)" />
+          <g
+             id="g13590">
+            <path
+               d="m 748.12,611.58 c -2e-5,0 -38.635,81.371 -72.125,90.531 -15.44,4.2234 -41.509,-6.9372 -61.469,-17.562 -20.67,-18.162 -36.969,-35.563 -36.969,-35.563 -10e-6,10e-5 44.177,91.108 32.844,118.31 -0.0476,0.1143 -0.10572,0.2297 -0.15625,0.3437 -30.496,14.173 -99.719,13.656 -99.719,13.656 -1e-5,-10e-5 21.54,7.2665 43.344,17.406 -34.847,10.197 -72.562,15.469 -72.562,15.469 -2e-5,-10e-5 97.365,14.869 110.03,37.437 1.3332,2.3756 2.4604,5.0213 3.375,7.875 -13.902,38.054 -54.5,90.094 -54.5,90.094 0,0 27.329,-18.986 56.031,-33.906 -4.1834,32.112 -13.375,62.031 -13.375,62.031 0,0 55.32,-57.153 86.25,-56.531 2.4844,0.0499 5.1023,0.4703 7.8125,1.1562 22.778,35.192 41.5,96.563 41.5,96.563 -10e-6,0 -0.20608,-36.786 4.2812,-69.063 21.486,17.888 39.031,37.531 39.031,37.531 0,0 -23.497,-56.309 -17.906,-86.687 22.618,-12.459 64.77,-12.18 92.688,-10.313 23.62,7.864 42.438,16.719 42.438,16.719 0,0 -8.3948,-5.7735 -19.625,-14.656 2.9773,0.3541 4.75,0.5937 4.75,0.5937 -2e-5,0 -26.288,-18.454 -46.531,-39.781 -9.0061,-10.797 -15.676,-21.794 -16.75,-31.5 -3.1472,-28.429 47.438,-82.719 47.438,-82.719 -10e-6,0 -13.59,8.7993 -31.188,16.344 13.726,-22.289 28.625,-40.531 28.625,-40.531 3e-5,0 -73.41,45.276 -97.562,26.875 -1.3094,-0.9976 -2.4982,-2.1595 -3.5938,-3.4375 -5.7022,-34.414 3.9062,-92.344 3.9062,-92.344 10e-6,-10e-5 -4.7423,9.0481 -11.844,20.937 3.9189,-29.203 11.531,-55.281 11.531,-55.281 z"
+               id="path13592"
+               inkscape:connector-curvature="0"
+               style="fill:url(#radialGradient4495)" />
+            <path
+               d="m 734.1,677.76 c -10e-6,0 -29.494,54.455 -52.82,59.523 -10.755,2.3363 -28.244,-6.277 -41.56,-14.3 -13.529,-13.223 -24.083,-25.764 -24.083,-25.764 -10e-6,7e-5 27.006,64.162 18.232,82.425 -0.0369,0.0767 -0.081,0.15384 -0.1198,0.23026 -21.454,8.618 -68.96,5.7377 -68.96,5.7377 -1e-5,-7e-5 14.523,5.7746 29.122,13.531 -24.296,5.7295 -50.382,7.9728 -50.382,7.9728 -10e-6,-7e-5 66.303,13.76 74.176,29.717 0.82865,1.6796 1.506,3.5371 2.0298,5.5297 -10.933,25.619 -40.704,59.865 -40.704,59.865 0,0 19.455,-12.038 39.705,-21.234 -4.0436,21.894 -11.446,42.099 -11.446,42.099 0,0 40.065,-37.22 61.277,-35.665 1.7038,0.12491 3.4858,0.50903 5.3215,1.0788 14.355,24.992 24.969,67.809 24.969,67.809 -10e-6,0 1.2005,-25.263 5.4588,-47.258 14.099,13.065 25.428,27.191 25.428,27.191 0,0 -14.077,-39.516 -9.1309,-60.168 15.983,-7.7285 44.912,-5.9993 64.01,-3.6987 15.929,6.2607 28.525,13.026 28.525,13.026 0,0 -5.5528,-4.27 -12.939,-10.778 2.0312,0.35174 3.2394,0.5809 3.2394,0.5809 -10e-6,0 -17.375,-13.628 -30.495,-29.009 -5.7892,-7.7413 -9.9668,-15.535 -10.35,-22.237 -1.1236,-19.632 35.586,-55.06 35.586,-55.06 0,0 -9.6508,5.5454 -22.008,10.083 10.236,-14.802 21.131,-26.782 21.131,-26.782 2e-5,0 -52.051,28.406 -67.962,14.892 -0.86259,-0.73267 -1.6364,-1.5737 -2.3419,-2.4911 -2.6594,-23.835 6.0507,-63.256 6.0507,-63.256 10e-6,-6e-5 -3.5859,6.0389 -8.8951,13.942 3.7559,-19.906 9.9335,-37.532 9.9335,-37.532 z"
+               id="path13594"
+               inkscape:connector-curvature="0"
+               style="opacity:0.61058003;fill:url(#radialGradient4497)" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g7828"
+         transform="matrix(0.08112286,-0.03619233,-0.03833018,-0.08539215,-105.35718,1152.7716)"
+         style="fill-rule:evenodd;stroke:none">
+        <path
+           style="opacity:0.68269001;stroke:none;filter:url(#filter7822-1)"
+           inkscape:connector-curvature="0"
+           id="path7804"
+           transform="matrix(1.1219,0,0,1.1219,-83.597,-99.375)"
+           d="m 753.78,611.58 c 0,0 -38.635,81.371 -72.125,90.531 -15.44,4.2234 -41.508,-6.9372 -61.469,-17.562 -20.67,-18.162 -36.969,-35.563 -36.969,-35.563 0,10e-5 44.177,91.108 32.844,118.31 -0.0476,0.1143 -0.1057,0.2297 -0.1562,0.3437 -30.496,14.173 -99.719,13.656 -99.719,13.656 0,-10e-5 21.54,7.2666 43.344,17.406 -34.847,10.197 -72.562,15.469 -72.562,15.469 0,-10e-5 97.365,14.869 110.03,37.437 1.3333,2.3756 2.4604,5.0213 3.375,7.875 -13.902,38.054 -54.5,90.094 -54.5,90.094 0,0 27.329,-18.986 56.031,-33.906 -4.1834,32.112 -13.375,62.031 -13.375,62.031 0,0 55.32,-57.153 86.25,-56.531 2.4844,0.0499 5.1023,0.4703 7.8125,1.1562 22.778,35.192 41.5,96.562 41.5,96.562 0,0 -0.2061,-36.786 4.2812,-69.062 21.486,17.888 39.031,37.531 39.031,37.531 0,0 -23.497,-56.309 -17.906,-86.687 22.618,-12.459 64.77,-12.18 92.688,-10.313 23.62,7.864 42.438,16.719 42.438,16.719 0,0 -8.3948,-5.7735 -19.625,-14.656 2.9774,0.3541 4.75,0.5937 4.75,0.5937 0,0 -26.288,-18.454 -46.531,-39.781 -9.0061,-10.797 -15.676,-21.794 -16.75,-31.5 -3.1472,-28.429 47.438,-82.719 47.438,-82.719 0,0 -13.59,8.7993 -31.188,16.344 13.726,-22.289 28.625,-40.531 28.625,-40.531 0,0 -73.41,45.276 -97.562,26.875 -1.3094,-0.9976 -2.4982,-2.1595 -3.5938,-3.4375 -5.7022,-34.414 3.9063,-92.344 3.9063,-92.344 0,-10e-5 -4.7423,9.0481 -11.844,20.937 3.919,-29.203 11.531,-55.281 11.531,-55.281 z" />
+        <g
+           style="stroke:none"
+           id="g7798">
+          <path
+             style="fill:url(#radialGradient4499);stroke:none"
+             inkscape:connector-curvature="0"
+             id="path7773"
+             d="m 748.12,611.58 c -2e-5,0 -38.635,81.371 -72.125,90.531 -15.44,4.2234 -41.509,-6.9372 -61.469,-17.562 -20.67,-18.162 -36.969,-35.563 -36.969,-35.563 -10e-6,10e-5 44.177,91.108 32.844,118.31 -0.0476,0.1143 -0.10572,0.2297 -0.15625,0.3437 -30.496,14.173 -99.719,13.656 -99.719,13.656 -1e-5,-10e-5 21.54,7.2665 43.344,17.406 -34.847,10.197 -72.562,15.469 -72.562,15.469 -2e-5,-10e-5 97.365,14.869 110.03,37.437 1.3332,2.3756 2.4604,5.0213 3.375,7.875 -13.902,38.054 -54.5,90.094 -54.5,90.094 0,0 27.329,-18.986 56.031,-33.906 -4.1834,32.112 -13.375,62.031 -13.375,62.031 0,0 55.32,-57.153 86.25,-56.531 2.4844,0.0499 5.1023,0.4703 7.8125,1.1562 22.778,35.192 41.5,96.563 41.5,96.563 -10e-6,0 -0.20608,-36.786 4.2812,-69.063 21.486,17.888 39.031,37.531 39.031,37.531 0,0 -23.497,-56.309 -17.906,-86.687 22.618,-12.459 64.77,-12.18 92.688,-10.313 23.62,7.864 42.438,16.719 42.438,16.719 0,0 -8.3948,-5.7735 -19.625,-14.656 2.9773,0.3541 4.75,0.5937 4.75,0.5937 -2e-5,0 -26.288,-18.454 -46.531,-39.781 -9.0061,-10.797 -15.676,-21.794 -16.75,-31.5 -3.1472,-28.429 47.438,-82.719 47.438,-82.719 -10e-6,0 -13.59,8.7993 -31.188,16.344 13.726,-22.289 28.625,-40.531 28.625,-40.531 3e-5,0 -73.41,45.276 -97.562,26.875 -1.3094,-0.9976 -2.4982,-2.1595 -3.5938,-3.4375 -5.7022,-34.414 3.9062,-92.344 3.9062,-92.344 10e-6,-10e-5 -4.7423,9.0481 -11.844,20.937 3.9189,-29.203 11.531,-55.281 11.531,-55.281 z" />
+          <path
+             style="opacity:0.61058003;fill:url(#radialGradient4501);stroke:none"
+             inkscape:connector-curvature="0"
+             id="path7786"
+             d="m 734.1,677.76 c -10e-6,0 -29.494,54.455 -52.82,59.523 -10.755,2.3363 -28.244,-6.277 -41.56,-14.3 -13.529,-13.223 -24.083,-25.764 -24.083,-25.764 -10e-6,7e-5 27.006,64.162 18.232,82.425 -0.0369,0.0767 -0.081,0.15384 -0.1198,0.23026 -21.454,8.618 -68.96,5.7377 -68.96,5.7377 -1e-5,-7e-5 14.523,5.7746 29.122,13.531 -24.296,5.7295 -50.382,7.9728 -50.382,7.9728 -10e-6,-7e-5 66.303,13.76 74.176,29.717 0.82865,1.6796 1.506,3.5371 2.0298,5.5297 -10.933,25.619 -40.704,59.865 -40.704,59.865 0,0 19.455,-12.038 39.705,-21.234 -4.0436,21.894 -11.446,42.099 -11.446,42.099 0,0 40.065,-37.22 61.277,-35.665 1.7038,0.12491 3.4858,0.50903 5.3215,1.0788 14.355,24.992 24.969,67.809 24.969,67.809 -10e-6,0 1.2005,-25.263 5.4588,-47.258 14.099,13.065 25.428,27.191 25.428,27.191 0,0 -14.077,-39.516 -9.1309,-60.168 15.983,-7.7285 44.912,-5.9993 64.01,-3.6987 15.929,6.2607 28.525,13.026 28.525,13.026 0,0 -5.5528,-4.27 -12.939,-10.778 2.0312,0.35174 3.2394,0.5809 3.2394,0.5809 -10e-6,0 -17.375,-13.628 -30.495,-29.009 -5.7892,-7.7413 -9.9668,-15.535 -10.35,-22.237 -1.1236,-19.632 35.586,-55.06 35.586,-55.06 0,0 -9.6508,5.5454 -22.008,10.083 10.236,-14.802 21.131,-26.782 21.131,-26.782 2e-5,0 -52.051,28.406 -67.962,14.892 -0.86259,-0.73267 -1.6364,-1.5737 -2.3419,-2.4911 -2.6594,-23.835 6.0507,-63.256 6.0507,-63.256 10e-6,-6e-5 -3.5859,6.0389 -8.8951,13.942 3.7559,-19.906 9.9335,-37.532 9.9335,-37.532 z" />
+        </g>
+      </g>
+    </g>
   </g>
 </svg>

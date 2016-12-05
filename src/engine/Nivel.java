@@ -9,8 +9,7 @@ import java.awt.image.ImageObserver;
  */
 public interface Nivel extends ImageObserver {
 
-    public static final int 
-            MINWIDTH = 1000,
+    public static final int MINWIDTH = 1000,
             MINHEIGHT = 700,
             MAXWIDTH = 1000,
             MAXHEIGHT = 700,
@@ -18,10 +17,10 @@ public interface Nivel extends ImageObserver {
             HEIGHT = 700,
             PLAY_HEIGHT = HEIGHT - 80,
             SPEED = 10;
-    
+
     public GerenciadorSprites getGerenciadorSprites();
-    
-    public GerenciadorSons getGerenciadorSons(); 
+
+    public GerenciadorSons getGerenciadorSons();
 
     public Jogador getJogador();
 

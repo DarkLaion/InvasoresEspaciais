@@ -14,9 +14,8 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 /**
- * Código baseado no projeto de Soraia Teixeira Barbosa, desenvolvido na FAPERJ
- * como trabalho de conclusao de curso. e-mail: soraiatbarbosa@gmail.com, arcade
- * Space Invaders Autores: Laionel e Cauê.
+ * Código baseado no projeto de Soraia Teixeira Barbosa, arcade Space Invaders
+ * Autores: Laionel e Cauê.
  */
 @SuppressWarnings("serial")
 public class Jogo extends Canvas implements Nivel, KeyListener {
@@ -30,6 +29,8 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
     private long tempo;
     private boolean fimJogo = false;
 
+    private static Jogo jogoAtual;
+
     public Jogo() {
         gerenciadorSprites = new GerenciadorSprites();
         gerenciadorSons = new GerenciadorSons();
@@ -41,21 +42,19 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         panel.setPreferredSize(new Dimension(Nivel.WIDTH, Nivel.HEIGHT));
         panel.setLayout(null);
         panel.add(this);
-        
+
         janelaJogo.setBounds(0, 0, Nivel.WIDTH, Nivel.HEIGHT);
         janelaJogo.setVisible(true);
         janelaJogo.setResizable(false);
         janelaJogo.setLocationRelativeTo(null);
         janelaJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+
         createBufferStrategy(2);
         estrategia = getBufferStrategy();
-        
+
         janelaJogo.setIgnoreRepaint(true);
         janelaJogo.requestFocus();
         janelaJogo.addKeyListener(this);
-        
-        
     }
 
     //Nivel
@@ -75,6 +74,7 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         jogador.setY(Nivel.HEIGHT - 1 * jogador.getHeight() - 84);
         gerenciadorSons.tocarSom("som/launch.wav");
         gerenciadorSons.repetirSom("som/fundo.wav");
+
     }
 
     // adicionar personagem
@@ -204,7 +204,10 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
         return fimJogo;
     }
 
-    // setters
+    public static Jogo getJogoAtual() {
+        return jogoAtual;
+    }
+
     public void jogo() {
         tempo = 1000;
         iniciarNivel();
@@ -216,22 +219,30 @@ public class Jogo extends Canvas implements Nivel, KeyListener {
             checarColisao();
             desenharNivel();
 
-            tempo = System.currentTimeMillis() - tempoInicio;
+            tempo += System.currentTimeMillis() - tempoInicio;
 
             try {
-                // Pause
                 Thread.sleep(17);
             } catch (InterruptedException e) {
-                // Possiveis erros declarar aqui
+                // Possiveis erros 
             }
         }
         desenharFimJogo();
     }
-    /*
-    public static void main(String [] args){
-           
-    }*/
-    
+
+    public static void main(String[] args) {
+        JogoOpcoes jogoOpcoes = new JogoOpcoes();
+        do {
+            try {
+                Thread.sleep(1000);//aguarda 1 segundo para ver se foi iniciado
+            } catch (InterruptedException e) {
+                // Possiveis erros 
+            }
+        } while (jogoOpcoes.getJogar() == false);
+        Jogo novoJogo = new Jogo();
+        novoJogo.jogo();
+    }
+
     @Override
     public void keyPressed(KeyEvent e) {
         jogador.teclaPressionada(e);

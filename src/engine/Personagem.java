@@ -23,12 +23,12 @@ public class Personagem {
         this.nivel = nivel;
         gerenciadorSprites = nivel.getGerenciadorSprites();
     }
-    
+
     public void desenhar(Graphics2D g) {
         g.drawImage(gerenciadorSprites.getSprite(colecaoSprites[frameAtual]), x, y,
                 nivel);
     }
-    
+
     //getters
     public int getX() {
         return x;
@@ -86,7 +86,7 @@ public class Personagem {
     public void setRemover() {
         remover = true;
     }
-    
+
     public boolean remova() {
         return remover;
     }
