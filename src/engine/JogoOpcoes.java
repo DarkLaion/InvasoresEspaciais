@@ -4,23 +4,29 @@ package engine;
 import java.awt.event.ActionEvent;
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
+
 /**
  *
  * @author Laionel e Cauê
  */
-public class JogoOpcoes extends JFrame{
-    private static String imgNave;
+public class JogoOpcoes extends JFrame {
+
+    private GerenciadorSprites gerenciadorSprites;
+    private static String imgNave, imgLogo;
     private static JFrame janelaOp;
     private static JPanel panel;
-    private static JLabel label;
+    private static JLabel label, labelLogo, labelNave;
     private static JComboBox comboPlayer;
     private static JButton btIniciar;
-    
-    
-    public JogoOpcoes(){
+    private ImageIcon imagem;
+
+    public JogoOpcoes() {
+        gerenciadorSprites = new GerenciadorSprites();
         janelaOp = new JFrame();
         panel = new JPanel();
         label = new JLabel();
+        labelLogo = new JLabel();
+        labelNave = new JLabel();
         comboPlayer = new JComboBox<>();
         btIniciar = new JButton();
 
@@ -38,15 +44,25 @@ public class JogoOpcoes extends JFrame{
         panel.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
         panel.setBounds(10, 10, janelaOp.getWidth() - 28, janelaOp.getHeight() - 50);
 
+        //propriedades do label:Logo
+        labelLogo.setLocation(40, 20);
+
+        //propriedades do label:Nave
+        labelNave.setLayout(null);
+        labelNave.setLocation(327, 30);
+        labelNave.setHorizontalAlignment(SwingConstants.CENTER);
+        labelNave.setVerticalAlignment(SwingConstants.CENTER);
+        labelNave.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
+
         //propriedades do label
         label.setText("Selecione sua nave:");
-        label.setSize(150, 30);
+        label.setSize(140, 30);
         label.setLabelFor(comboPlayer);
-        label.setLocation(20, 70);
+        label.setLocation(40, 140);
 
         //propriedades do combo
-        comboPlayer.setSize(150, 30);
-        comboPlayer.setLocation(20, 100);
+        comboPlayer.setSize(120, 30);
+        comboPlayer.setLocation(175, 140);
         comboPlayer.setModel(new DefaultComboBoxModel<>(
                 new String[]{
                     "Imperium",
@@ -66,32 +82,52 @@ public class JogoOpcoes extends JFrame{
         //Adicionar componentes
         janelaOp.add(panel);
         panel.add(label);
+        panel.add(labelLogo);
+        panel.add(labelNave);
         panel.add(comboPlayer);
         panel.add(btIniciar);
-        
+
+        //caminho das imagens
         imgNave = "img/ship01.png"; //padrao
+        imgLogo = "img/logo.png"; //logo
+
+        setImgLogo();
+        setImgNave();
     }
-   
-    public static String getImgNave(){
+
+    public void setImgNave() {
+        imagem = new ImageIcon(gerenciadorSprites.getSprite(imgNave));
+        labelNave.setSize(imagem.getIconWidth() + 40, imagem.getIconHeight() + 60);
+        labelNave.setIcon(imagem);
+    }
+
+    public void setImgLogo() {
+        imagem = new ImageIcon(gerenciadorSprites.getSprite(imgLogo));
+        labelLogo.setSize(imagem.getIconWidth(), imagem.getIconHeight());
+        labelLogo.setIcon(imagem);
+    }
+
+    public static String getImgNave() {
         return imgNave;
     }
-        
+
     private void btIniciarActionPerformed(ActionEvent evt) {
         janelaOp.dispose();
-        
+
         Jogo novoJogo = new Jogo();
-        novoJogo.jogo();                    
+        novoJogo.jogo();
     }
-   
+
     private void comboPlayerActionPerformed(ActionEvent evt) {
         if (comboPlayer.getSelectedIndex() == 0) {
             imgNave = "img/ship01.png"; //ship 01 = Falcom
         } else if (comboPlayer.getSelectedIndex() == 1) {
             imgNave = "img/ship02.png"; //ship 02 = Imperium
         }
+        setImgNave();
     }
-    
-    public static void main(String [] args){
-        JogoOpcoes jogoOpcoes = new JogoOpcoes();
+
+    public static void main(String[] args) {
+        new JogoOpcoes();
     }
 }
