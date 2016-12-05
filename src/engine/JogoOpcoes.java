@@ -40,7 +40,7 @@ public class JogoOpcoes extends JFrame {
         janelaOp.setVisible(true);
         janelaOp.setResizable(false);
         janelaOp.setLocationRelativeTo(null);
-        janelaOp.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        janelaOp.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 
         //propriedades do panel
         panel.setLayout(null);
